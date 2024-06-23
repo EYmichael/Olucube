@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="./contactpg.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Inspiration|Poppins:100,200,300,400,500,600,700,800,900">
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <header class="heading-con">
+        <nav class="head_nav-items_con">
+            <ul class="head_nav-items_sub-con">
+                <li class="head_nav-item"><a href="./index.html">Home</a></li>
+                <li class="head_nav-item"><a href="#">About</a></li>
+                <li class="head_nav-item"><a href="./contactpg.html">Contact</a></li>
+                <li class="head_nav-item"><a href="./learnpg.html">learn more</a></li>
+            </ul>
+            <img src="./icon/noun-list.svg" alt="" class="menu-icon" onclick="menuButt()" />
+            <img src="./icon/noun-close.svg" alt="" class="close-icon" onclick="closeMenuButt()" />
+        </nav>
+    </header>
+
+    <div class="landing-pg_bg-container">
+
+
+        <main class="contents">
+            <section class="contact_landing-pg_con">
+                <div class="contact-text_con">
+                    <p class="text-1">
+                        Contact Us
+                    </p>
+                    <p class="text-2">
+                        We consider all the drivers of change to give you the components <br> you need to change and to
+                        create
+                        true
+                        happiness.
+                    </p>
+                </div>
+                <div class="sign-up_container">
+                    <form action="" method="post" class="form-con">
+                        <div class="name_sect-con">
+                            <div class="input-items_con">
+                                <label for="name">First Name</label>
+                                <input type="text" name="" id="name" required />
+                            </div>
+                            <div class="input-items_con">
+                                <label for="Lname">Last Name</label>
+                                <input type="text" name="" id="Lname" required />
+                            </div>
+                        </div>
+                        <div class="email-phone_sect-con">
+                            <div class="input-items_con">
+                                <label for="email">Email</label>
+                                <input type="email" name="" id="email" required />
+                            </div>
+                            <div class="input-items_con">
+                                <label for="phone">Phone no</label>
+                                <input type="tel" name="" id="phone" required />
+                            </div>
+                        </div>
+                        <div class="input-items_con">
+                            <label for="subJ">Subject</label>
+                            <input type="text" name="" id="subJ" required />
+                        </div>
+                        <div class="input-items_con">
+                            <label for="message">Message</label>
+                            <textarea name="" id="message" cols="30" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+
+                </div>
+
+            </section>
+
+            <section class="home-pg_sixCon">
+                <div class="text-container">
+                    <h1 class="text-item_one">Visit Us</h1>
+                    <p class="text-item_two">52 Winding Wood Dr, <br> Sayreville, NJ 08872</p>
+                    <p class="text-item_three">
+                        <span class="label">Hours</span>
+                        <small>Monday - Saturday <br> 9am - 7pm</small>
+                        <small>Sunday <br> 10am - 6pm</small>
+                    </p>
+                    <p class="text-item_four">
+                        <span class="label">Phone</span>
+                        <small>+1 8623301046</small>
+                    </p>
+                </div>
+
+                <figure class="right_container">
+                    <div id="map"></div>
+                </figure>
+            </section>
+
+        </main>
+
+        <footer class="base-contents_container">
+            <div class="baseLeft-content_con">
+                <p class="text-item_con"><span class="stroked">Olucube</span> <br> Investments LLC</p>
+                <nav class="bottom_nav-items_con">
+                    <ul class="bottom_nav-items_sub-con">
+                        <li class="bottom_nav-item"><a href="./index.html">Home</a></li>
+                        <li class="bottom_nav-item"><a href="#">About</a></li>
+                        <li class="bottom_nav-item"><a href="./contactpg.html">Contact</a></li>
+                        <li class="bottom_nav-item"><a href="./learnpg.html">Learn more</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="baseRight-content_con">
+                <figure class="socialLinks-items_con">
+                    <a href="#" title="Follow us on facebook"><img src="./icon/icon-facebook.svg" alt=""
+                            class="socialLink-item"></a>
+                    <a href="#" title="Follow us on instagram"><img src="./icon/icon-instagram.svg" alt=""
+                            class="socialLink-item"></a>
+                    <a href="#" title="Join us on linkedin"><img src="./icon/icon-pinterest.svg" alt=""
+                            class="socialLink-item"></a>
+                    <a href="#" title="Join us on twitter"><img src="./icon/icon-twitter.svg" alt=""
+                            class="socialLink-item"></a>
+                </figure>
+                <p class="text-item-con">&copy; 2024 Olucube LLC. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <script src="./nav.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>

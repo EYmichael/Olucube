@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Leaflet.js CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Inspiration|Poppins:100,200,300,400,500,600,700,800,900">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css">
+    <title>Food Export</title>
+</head>
+
+<body>
+    <header class="heading-con">
+        <nav class="head_nav-items_con">
+            <ul class="head_nav-items_sub-con">
+                <li class="head_nav-item"><a href="./index.html">Home</a></li>
+                <li class="head_nav-item"><a href="#">About</a></li>
+                <li class="head_nav-item"><a href="./contactpg.html">Contact</a></li>
+                <li class="head_nav-item"><a href="./learnpg.html">Learn more</a></li>
+            </ul>
+            <img src="./icon/noun-list.svg" alt="" class="menu-icon" onclick="menuButt()" />
+            <img src="./icon/noun-close.svg" alt="" class="close-icon" onclick="closeMenuButt()" />
+        </nav>
+    </header>
+
+    <div class="landing-pg_bg-container">
+
+        <main class="contents">
+
+            <section class="landing_home-pg">
+                <div class="landing_home-pg_overlay"></div>
+                <div class="landing_home-pg_sub-con">
+                    <h1 class="title-text_one">Olucube</h1>
+                    <p class="title-text_two">Investments LLC</p>
+                    <p class="title-text_three">
+                        Welcome to the most affordable wholesales West African foods. <br>
+                        <span class="auto-typed"></span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="home-pg_oneCon">
+                <div class="home-pg_left_oneSubCon">
+                    <p class="title-text">Wholesales</p>
+                    <p class="text-contents">
+                        To qualify for wholesale pricing you must buy from us in bulk quantities.
+                        For some customers that might need a pallet of lemons, or for others it could be a 10kg
+                        box of carrots for juicing at home.
+                    </p>
+                    <button class="butt-item"><a href="./learnpg.html">Learn more.</a></button>
+                </div>
+                <figure class=" home-pg_right_oneSubCon">
+                    <img src="./Images/wholesale.jpg" alt="" loading="lazy">
+                </figure>
+            </section>
+
+            <section class="home-pg_howItWorksCon">
+                <div class="text_con">
+                    <!-- <p class="title-text">Apply Process</p> -->
+                    <h1 class="title-text_one">How It Works</h1>
+                </div>
+                <div class="row-items_con">
+                    <div class="row-item">
+                        <figure class="img-item_con"><img src="./icon/noun-contact-1023970.svg" alt=""></figure>
+                        <div class="text-item_con">
+                            <h2 class="item-1">Contact Us</h2>
+                            <p class="item-2">
+                                You can contact us directly on the contact page and you could directly
+                                meet us at the specified address.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-item">
+                        <figure class="img-item_con"><img src="./icon/noun-order-processing-3262994.svg" alt="">
+                        </figure>
+                        <div class="text-item_con">
+                            <h2 class="item-1">Give Us Your Specs</h2>
+                            <p class="item-2">
+                                Tell us what West African food you have in mind and your specification
+                                e.g bags of rice, barrels of palm oils etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-item">
+                        <figure class="img-item_con"><img src="./icon/noun-orders-3946702.svg" alt=""></figure>
+                        <div class="text-item_con">
+                            <h2 class="item-1">Get Your Orders</h2>
+                            <p class="item-2">
+                                We offer speedy delivery of your requirements including export services to any
+                                destination of your choice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-pg_twoCon">
+                <div class="home-pg_twoSubCon">
+                    <div class="text-container">
+                        <h1 class="title-text">Seasonal Fruits And Veges</h1>
+                        <p class="title-text-one">Bringing to you farm fresh seasonal produce at your doorsteps</p>
+                    </div>
+                    <div class="contents-container">
+                        <!-- pic-con one -->
+                        <figure class="picture_con">
+                            <img src="./Pome/2337030985.jpg" alt="" loading="lazy" class="pome" />
+                            <img src="./Pome/African-Pear1.webp" alt="" loading="lazy" class="pome" />
+                            <img src="./Pome/african-star-apple-one-native-600nw-1318319078.webp" alt=""
+                                loading="lazy" class="pome" />
+                            <img src="./Pome/agbalumo1.jpg" alt="" loading="lazy" class="pome">
+                            <img src="./Pome/FJYi80kX0AE14Qv.webp" alt="" loading="lazy" class="pome">
+                            <img src="./Pome/images (6).jfif" alt="" loading="lazy" class="pome">
+                            <img src="./Pome/images (7).jfif" alt="" loading="lazy" class="pome">
+                            <img src="./Pome/images (8).jfif" alt="" loading="lazy" class="pome">
+                            <img src="./Pome/images (9).jfif" alt="" loading="lazy" class="pome">
+                            <img src="./Pome/IMG_20200731_211835.jpg" alt="" loading="lazy" class="pome">
+                            <img src="./Pome/stermart-marketplace-agbalumo-cherry-buy-and-sell-in-Nigeria-america-usa-seasoned-fruit-google.png"
+                                alt="" loading="lazy" class="pome">
+                            <p class="caption">Pome fruits</p>
+                            <div class="layer">
+                                <p class="texts">
+                                    Pome fruits in West Africa includes apples, pears amongst others.
+                                    For example we have the African Star apples and is locally called Alansa, Agbalumo,
+                                    Udara, Udala etc.
+                                    Another example is pear and is locally called Ube, nsafu etc.
+                                    Ube is locally eaten with roasted corn.
+                                </p>
+                            </div>
+                        </figure>
+                        <!-- pic-con one //-->
+
+                        <!-- pic-con two-->
+                        <figure class="picture_con">
+                            <img src="./Citrus/20000910_12-fresho-orange-imported.webp" alt="" class="citrus" />
+                            <img src="./Citrus/20776.png" alt="" loading="lazy" class="citrus" />
+                            <img src="./Citrus/African-cherry-orange-1.jpg" alt="" class="citrus" />
+                            <img src="./Citrus/download.jfif" alt="" class="citrus">
+                            <img src="./Citrus/GettyImages-1205638014-2000-d0fbf9170f2d43eeb046f56eec65319c.jpg"
+                                alt="" class="citrus">
+                            <img src="./Citrus/images (6).jfif" alt="" class="citrus">
+                            <img src="./Citrus/My project-1 (4).jpg" alt="" class="citrus">
+                            <img src="./Citrus/navel_orange.png" alt="" class="citrus">
+                            <img src="./Citrus/Oranges_-_whole-halved-segment.jpg" alt="" class="citrus">
+                            <img src="./Citrus/Tangerine-1.jpg" alt="" class="citrus">
+                            <img src="./Citrus/sp67974.jpg" alt="" class="citrus">
+                            <p class="caption">Citrus Family</p>
+                            <div class="layer">
+                                <p class="texts">
+                                    Our local oranges varieties includes obuasi, asuansi,
+                                    achiasi, shama, nkwanta, anomabu, and kwesi nyarko oranges and sometimes eaten with
+                                    roasted groundnut.
+                                    We also have lemons e.g Jogbo, tangerine e.g ọsan oyinbo of different varieties.
+                                </p>
+                            </div>
+                        </figure>
+                        <!-- pic-con two //-->
+
+                        <!-- pic-con three-->
+                        <figure class="picture_con">
+                            <img src="./Tropical/0000.jfif" alt="" class="tropical">
+                            <img src="./Tropical/5528589_figs_jpegc0d847813434cc206e6f6fc544d5715f.jfif" alt=""
+                                class="tropical">
+                            <img src="./Tropical/bananas.jpg" alt="" class="tropical">
+                            <img src="./Tropical/download.jfif" alt="" class="tropical">
+                            <img src="./Tropical/EzPyje6VkAcfZoT.jpg" alt="" class="tropical">
+                            <img src="./Tropical/ghana140a0cbe006ca6cf291ebff0000dce829.jpg" alt=""
+                                class="tropical">
+                            <img src="./Tropical/images (6).jfif" alt="" class="tropical">
+                            <img src="./Tropical/images (7).jfif" alt="" class="tropical">
+                            <img src="./Tropical/Matoke-1-1-1200x800.jpg" alt="" class="tropical">
+                            <img src="./Tropical/pineapple-banner.jpg" alt="" class="tropical">
+                            <img src="./Tropical/Pineapples-800x533-1.webp" alt="" class="tropical">
+                            <p class="caption">Tropical fruits</p>
+                            <div class="layer">
+                                <p class="texts">
+                                    Enjoy our ogede wewe in different dish styles.
+                                    We have varieties of bananas(ogede wewe), plantain(agbagba), pineapples(Ọ̀pẹ̀yìnbó),
+                                    figs(ọpọtọ) and many more.
+                                </p>
+                            </div>
+                        </figure>
+                        <!-- pic-con three //-->
+                    </div>
+                    <div class="contents-container">
+                        <figure class="picture_con">
+                            <img src="./Stone/0_HJcRfA-pPSP52_7t.jpg" alt="" class="stone">
+                            <img src="./Stone/20210223_230359.webp" alt="" class="stone">
+                            <img src="./Stone/african-mango-1296x728-header.webp" alt="" class="stone">
+                            <img src="./Stone/african-mango-rotator.jpg" alt="" class="stone">
+                            <img src="./Stone/coconut-plantation.jpg" alt="" class="stone">
+                            <img src="./Stone/coconutafrican.jpg" alt="" class="stone">
+                            <img src="./Stone/images (10).jfif" alt="" class="stone">
+                            <img src="./Stone/images (11).jfif" alt="" class="stone">
+                            <img src="./Stone/images (6).jfif" alt="" class="stone">
+                            <img src="./Stone/images (7).jfif" alt="" class="stone">
+                            <img src="./Stone/images (8).jfif" alt="" class="stone">
+                            <img src="./Stone/images (9).jfif" alt="" class="stone">
+                            <img src="./Stone/jason-leung-K1PU6sq.webp" alt="" class="stone">
+                            <img src="./Stone/main-qimg-beb28f21e4.jfif" alt="" class="stone">
+                            <img src="./Stone/Peaches-by-.jpg" alt="" class="stone">
+                            <img src="./Stone/r3pA7gp2-Untitled-1-7.webp" alt="" class="stone">
+                            <p class="caption">Stone fruits</p>
+                            <div class="layer">
+                                <p class="texts">
+                                    We provide you with varieties of peaches(piisi), plums(Pupa buulu toṣokunkun),
+                                    apricots(o gbẹ apricot),
+                                    mangoes(Máńgòrò), coconuts(agbon), almonds(almondi) and more. These are basic food
+                                    elements of the West Africans.
+                                </p>
+                            </div>
+                        </figure>
+                        <figure class="picture_con">
+                            <img src="./Vege/12831.png" alt="" class="vege">
+                            <img src="./Vege/13420.png" alt="" class="vege">
+                            <img src="./Vege/1681275847484.jfif" alt="" class="vege">
+                            <img src="./Vege/594_IMAGE.jfif" alt="" class="vege">
+                            <img src="./Vege/598_IMAGE.jpg" alt="" class="vege">
+                            <img src="./Vege/91tsteRPLKL.jpg" alt="" class="vege">
+                            <img src="./Vege/b0f6d2b4332d.png" alt="" class="vege">
+                            <img src="./Vege/Bitter-leaf-e1591891574336.webp" alt="" class="vege">
+                            <img src="./Vege/Figure-1-IMG_5933.jpg" alt="" class="vege">
+                            <img src="./Vege/images (6).jfif" alt="" class="vege">
+                            <img src="./Vege/images (7).jfif" alt="" class="vege">
+                            <img src="./Vege/images (8).jfif" alt="" class="vege">
+                            <img src="./Vege/img_20160807_082100.webp" alt="" class="vege">
+                            <img src="./Vege/Scent-leaf.-Photo-Pixabay.jpeg" alt="" class="vege">
+                            <img src="./Vege/UGWU.jpg" alt="" class="vege">
+                            <img src="./Vege/waterleaf.jpeg" alt="" class="vege">
+                            <p class="caption">Vegetables</p>
+                            <div class="layer">
+                                <p class="texts">
+                                    Amaranth leaves (efo tete), Cassava leaves, Spinach, Ugwu (fluted pumpkin), Water
+                                    leaf, Bitter leaf,
+                                    Ewedu (jute leaf), Scent leaf, Atafa leaf, Ukazi leaf, Oha leaf, Potato leaf and
+                                    many more.
+                                    These are special components of the West African dishes.
+                                </p>
+                            </div>
+                        </figure>
+                        <figure class="picture_con">
+                            <img src="./Salads/sal.jpg" alt="" class="sal">
+                            <img src="./Salads/salad-1.jpg" alt="" class="sal">
+                            <img src="./Salads/salad-2.jpg" alt="" class="sal">
+                            <img src="./Salads/sall.jpg" alt="" class="sal">
+                            <img src="./Salads/salll.jpg" alt="" class="sal">
+                            <p class="caption">Salads & More</p>
+                            <div class="layer">
+                                <p class="texts">
+                                    broccoli, cabbage, carrots, cauliflower, celery, cucumbers, endive, escarole, green
+                                    onions, lettuce,
+                                    mushrooms, peas, bell peppers, chili peppers, radishes, romaine, spinach and
+                                    tomatoes
+                                    cucumbers, peppers, tomatoes, onions, carrots, celery, radishes, mushrooms, avocado,
+                                    olives,
+                                    artichoke hearts, heart of palm, watercress, parsley, garden beets, and green beans.
+                                </p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-pg_threeCon">
+                <div class="text-container">
+                    <h1 class="title-text">Other West African Foods</h1>
+                    <p class="title-text-one">Olucube Group makes it possible to purchase West African recipes with
+                        little
+                        or no effort.</p>
+                </div>
+                <div class="contents-container">
+                    <figure class="picture_con bb">
+                        <img src="./Images/Seafood.jpg" alt="">
+                        <div class="layer">
+                            <h2 class="layer-title-text">Seafoods</h2>
+                        </div>
+                    </figure>
+                    <figure class="picture_con">
+                        <img src="./Images/Spices.jpg" alt="">
+                        <div class="layer">
+                            <h2 class="layer-title-text">Spices</h2>
+                        </div>
+                    </figure>
+                    <figure class="picture_con">
+                        <img src="./Images/Poultry.jpg" alt="">
+                        <div class="layer">
+                            <h2 class="layer-title-text">Poultry</h2>
+                        </div>
+                    </figure>
+                </div>
+                <div class="contents-container">
+                    <figure class="picture_con bb">
+                        <img src="./Images/grains and cereals.jpg" alt="">
+                        <div class="layer">
+                            <h2 class="layer-title-text">Grains and Cereals</h2>
+                        </div>
+                    </figure>
+                    <figure class="picture_con">
+                        <img src="./Images/tubers.webp" alt="">
+                        <div class="layer">
+                            <h2 class="layer-title-text">Tubers</h2>
+                        </div>
+                    </figure>
+                    <figure class="picture_con">
+                        <img src="./Images/nuts.jpg" alt="">
+                        <div class="layer">
+                            <h2 class="layer-title-text">Nuts</h2>
+                        </div>
+                    </figure>
+                </div>
+                <div class="contents-container">
+                    <figure class="picture_con bb">
+                        <img src="./Images/fat & oil.jpg" alt="">
+                        <div class="layer">
+                            <h2 class="layer-title-text">Fats & Oils</h2>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="home-pg_fourCon">
+                <div class="home-pg_fourSubCon">
+                    <h1 class="text-item">We Accept Orders <br> Anywhere In The World</h1>
+                    <button class="click-item"><a href="./contactpg.html">Contact Us</a></button>
+                </div>
+            </section>
+
+            <section class="home-pg_fiveCon">
+                <div class="title-text_con">
+                    <h1 class="title-text">What Our Customers Say...</h1>
+                    <p class="title-text_one">Some of our clients testimonials</p>
+                </div>
+                <div class="contents_container">
+                    <div class="contents-item">
+                        <figure class="profile-pic_con"><img src="./image-daniel.jpg" alt=""></figure>
+                        <p class="testimonial-text">
+                            <q>I love my experience with Olucube Group. Its been the most amazing export services i ever
+                                encountered.</q>
+                            <small class="testifier-name">~ Daniel K</small>
+                        </p>
+                        <img src="./icon/noun-quotes.svg" alt="" class="icon">
+                        <img src="./icon/noun-quotes.svg" alt="" class="icon-nd">
+                    </div>
+                    <div class="contents-item">
+                        <figure class="profile-pic_con"><img src="./image-kira.jpg" alt=""></figure>
+                        <p class="testimonial-text">
+                            <q>I've been on retailing West African products but its never been better. Olucube Group
+                                effortless service makes it more interesting.</q>
+                            <small class="testifier-name">~ Kira Adners</small>
+                        </p>
+                        <img src="./icon/noun-quotes.svg" alt="" class="icon">
+                        <img src="./icon/noun-quotes.svg" alt="" class="icon-nd">
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-pg_sixCon">
+                <div class="text-container">
+                    <h1 class="text-item_one">Visit Us</h1>
+                    <p class="text-item_two">52 Winding Wood Dr, <br> Sayreville, NJ 08872</p>
+                    <p class="text-item_three">
+                        <span class="label">Hours</span>
+                        <small>Monday - Saturday <br> 9am - 7pm</small>
+                        <small>Sunday <br> 10am - 6pm</small>
+                    </p>
+                    <p class="text-item_four">
+                        <span class="label">Phone</span>
+                        <small>+1 8623301046</small>
+                    </p>
+                </div>
+
+                <figure class="right_container">
+                    <div id="map"></div>
+                </figure>
+            </section>
+
+            <section class="home-pg_sevenCon">
+                <div class="text-container">
+                    <h1 class="title-text">Join Our Newsletters...</h1>
+                    <p class="title-text_one">Get Olucube company's updates and also latest stories about organic
+                        nutrition, health and wellness in your inbox weekly.
+                    </p>
+                </div>
+
+                <form action="" method="post" class="sign-up_con">
+                    <div class="signUp_sub-con">
+                        <input type="email" id="newsletter" placeholder="example@mail.com" required />
+                    </div>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="base-contents_container">
+            <div class="baseLeft-content_con">
+                <p class="text-item_con"><span class="stroked">Olucube</span> <br> Investments LLC</p>
+                <nav class="bottom_nav-items_con">
+                    <ul class="bottom_nav-items_sub-con">
+                        <li class="bottom_nav-item"><a href="./index.html">Home</a></li>
+                        <li class="bottom_nav-item"><a href="#">About</a></li>
+                        <li class="bottom_nav-item"><a href="./contactpg.html">Contact</a></li>
+                        <li class="bottom_nav-item"><a href="./learnpg.html">Learn more</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="baseRight-content_con">
+                <figure class="socialLinks-items_con">
+                    <a href="#" title="Follow us on facebook"><img src="./icon/icon-facebook.svg" alt=""
+                            class="socialLink-item"></a>
+                    <a href="#" title="Follow us on instagram"><img src="./icon/icon-instagram.svg" alt=""
+                            class="socialLink-item"></a>
+                    <a href="#" title="Join us on linkedin"><img src="./icon/icon-pinterest.svg" alt=""
+                            class="socialLink-item"></a>
+                    <a href="#" title="Join us on twitter"><img src="./icon/icon-twitter.svg" alt=""
+                            class="socialLink-item"></a>
+                </figure>
+                <p class="text-item-con">&copy; 2024 Olucube LLC. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./nav.js"></script>
+    <script src="./slides.js"></script>
+    <script src="map.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-typed", {
+            strings: ['Offering one of the best export services since 2017.', 'And obtained Foods and Drugs Permit in several countries.'],
+            typeSpeed: 150,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
